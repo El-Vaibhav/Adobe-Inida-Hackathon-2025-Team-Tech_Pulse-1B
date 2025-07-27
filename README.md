@@ -289,7 +289,7 @@ output_2/        → Output for test case 2
 ### Building the Image
 
 ```bash
-docker build --platform linux/amd64 -t none team_tech_pulse_solution_2:69 .
+docker build --platform linux/amd64 -t team_tech_pulse_solution_2:69 .
 ```
 
 ### Running the Container
