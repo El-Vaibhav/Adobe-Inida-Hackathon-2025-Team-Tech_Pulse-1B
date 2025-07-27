@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "input_documents": [
+      "1.pdf",
+      "2.pdf",
+      "3.pdf",
+      "4.pdf",
+      "5.pdf"
+    ],
+    "persona": "Undergraduate Chemistry Student preparing for exam in reaction kinetics",
+    "job_to_be_done": "Identify key concepts and mechanisms for exam preparation on reaction kinetics",
+    "processing_timestamp": "2025-07-27T15:33:47.500211"
+  },
+  "extracted_sections": [
+    {
+      "document": "1.pdf",
+      "section_title": "Organic Chemistry",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "1.pdf",
+      "section_title": "Chapter 6: Thermodynamics and kinetics review",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "1.pdf",
+      "section_title": "Chapter 6: Thermodynamics and kinetics review",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "2.pdf",
+      "section_title": "1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "2.pdf",
+      "section_title": "2",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "2.pdf",
+      "section_title": "3",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "3.pdf",
+      "section_title": "Autumn 2004",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "3.pdf",
+      "section_title": "Autumn 2004",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "3.pdf",
+      "section_title": "Autumn 2004",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "4.pdf",
+      "section_title": "1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "4.pdf",
+      "section_title": "3",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "4.pdf",
+      "section_title": "5",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "5.pdf",
+      "section_title": "1",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "5.pdf",
+      "section_title": "2",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "5.pdf",
+      "section_title": "3",
+      "importance_rank": 3,
+      "page_number": 3
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "1.pdf",
+      "refined_text": " \n \n \n \n \n \nOrganic Chemistry \n \nwith a Biological Emphasis \n \nBy \nTim Soderberg \nUniversity of Minnesota, Morris \n \nUC San Diego Edition \n \n \n \n \n \n \n \nEdited with permission from the author by \nValerie A. Schmidt & Haim Weizman \n \n \nAY23-24 \n \n \n \n \n \n \n \nThis work is licensed under the Creative C",
+      "page_number": 1
+    },
+    {
+      "document": "1.pdf",
+      "refined_text": "Chapter 6: Thermodynamics and kinetics review \nUCSD Chemistry & Biochemistry AY23-24 \n6 - 2 \nChapter 6 \n \n \n \nA brief review of thermodynamics and \nkinetics \n \n \n \n \n \nA hot spring in Yellowstone National Park \n(Credit: https://www.flickr.com/photos/pavdw) \n \nIntroduction \nSeptember 5, 1966, turned ",
+      "page_number": 2
+    },
+    {
+      "document": "1.pdf",
+      "refined_text": "Chapter 6: Thermodynamics and kinetics review \nUCSD Chemistry & Biochemistry AY23-24 \n6 - 3 \nAt the end of his sophomore year, Freeze approached Dr. Thomas Brock, one \nof his microbiology professors, to ask about the possibility of working as a \nresearch assistant over the summer. Brock took him up ",
+      "page_number": 3
+    },
+    {
+      "document": "2.pdf",
+      "refined_text": " \n1\n \n \nReaction Kinetics \n \n \nDr Claire Vallance  \nFirst year, Hilary term \n \n \nSuggested Reading  \n \n \nPhysical Chemistry, P. W. Atkins  \nReaction Kinetics, M. J. Pilling and P. W. Seakins  \nChemical Kinetics, K. J. Laidler \nModern Liquid Phase Kinetics, B. G. Cox \n \n \nCourse synopsis \n \n \n \n1.   ",
+      "page_number": 1
+    },
+    {
+      "document": "2.pdf",
+      "refined_text": " \n2 \n1.  Introduction \n \nChemical reaction kinetics deals with the rates of chemical processes.   Any chemical process may \nbe broken down into a sequence of one or more single-step processes known either as elementary \nprocesses, elementary reactions, or elementary steps.  Elementary reactions usua",
+      "page_number": 2
+    },
+    {
+      "document": "2.pdf",
+      "refined_text": " \n3\nconcentration of N2, H2, or NH3.  Say we monitor N2, and obtain a rate of -d[N2]\ndt  = x mol dm-3 s-1.  \nSince for every mole of N2 that reacts, we lose three moles of H2, if we had monitored H2 instead of \nN2 we would have obtained a rate -d[H2]\ndt  = 3x mol dm-3 s-1.  Similarly, monitoring the",
+      "page_number": 3
+    },
+    {
+      "document": "3.pdf",
+      "refined_text": "Autumn 2004\n1\nReaction Kinetics in Organic Reactions\nWhy are kinetic analyses important?\n\u2022\nConsider two classic examples in asymmetric catalysis:\ngeraniol epoxidation\ngeraniol hydrogenation\n+   TBHP\n5-10% Ti(O-i-C3H7)4\nDET\nCH2Cl2\n3A mol sieve\nL-(+)-DET  = \nOH\nOH\nCOOH5C2\nCOOH5C2\n*     *\nOH\nOH\nO\nOH\nP(",
+      "page_number": 1
+    },
+    {
+      "document": "3.pdf",
+      "refined_text": "Autumn 2004\n3\nKinetics of Asymmetric Catalytic Reactions\n\u201cAsymmetric catalysis is four-dimensional chemistry.  Simple stereochemical\nscrutiny of the substrate or reagent is not enough. The high efficiency that\nthese reactions provide can only be achieved through a combination of both an\nideal three-",
+      "page_number": 2
+    },
+    {
+      "document": "3.pdf",
+      "refined_text": "Autumn 2004\n5\nReaction Rate\nConsider the reaction:\nA + B ! \" \n! \nC + D\nHow do we define the rate of the reaction?\nFirst, we define something called the extent of the reaction:\n! = extent of reaction = ni \" ni 0\n#i\nSubscript i refer to the reactants and products\n(A, B, C, and D)\nni0 means the number ",
+      "page_number": 3
+    },
+    {
+      "document": "4.pdf",
+      "refined_text": "1\nCarbonyl Chemistry  (12 Lectures)\nAim of Course\n\u2022\nTo build upon elements of Dr E.H. Smith\u2019s and Dr. D.C. Braddocks\u2019s course.\n\u2022\nTo introduce the chemistry of the carbonyl functional groups.\nCourse Objectives\nAt the end of this course you should be able to:\n\u2022\nIdentify the various functional groups t",
+      "page_number": 1
+    },
+    {
+      "document": "4.pdf",
+      "refined_text": "3\nNomenclature of Aldehydes and Ketones\n\u2022\nCommon names are used for the simplest aldehydes and ketones:\nformaldehyde\nbutyraldehyde\nbenzaldehyde\nacetone\nbenzophenone\nacetophenone\nO\nC\nH\nH\nO\nC\nH\nCH2\nCH2\nCH3\nO\nC\nCH3\nH3C\nC\nO\nH\nC\nO\nCH3\nC\nO\n\u2022\nCommon names are also used for carbonyl-containing substituent g",
+      "page_number": 2
+    },
+    {
+      "document": "4.pdf",
+      "refined_text": "5\nStructure of Aldehydes and Ketones\n\u2022\nThe carbonyl carbon of an aldehyde or ketone is sp2-hybridized.\n\u2022\nThe bond angle is close to 120\u00b0  (trigonal planar).\n\u2022\nThe carbon-oxygen double bond consists of:\n\u2013 A ! C-O bond\n\u2013 A \" C=O bond\nWe can compare the C=O bond length\nto those of C=C double bonds\n6\nPr",
+      "page_number": 3
+    },
+    {
+      "document": "5.pdf",
+      "refined_text": "1 \n \nANNAMALAI UNIVERSITY \nMASTER OF SCIENCE \nM.Sc. CHEMISTRY \nDEGREE COURSE \nUNDER CBCS \n2021-2022 \n \nThe Course of Study and the Scheme of Examinations \nS. No.\nStudy Components\nIns. \nHrs/\nweek \nCredit\nTitle of the Paper\nMaximum Marks\nCourse Title\n1ST YEAR-   SEMESTTER I\nCIA\nUni. \nExam \nTotal\n1\nMAI",
+      "page_number": 1
+    },
+    {
+      "document": "5.pdf",
+      "refined_text": "2 \n \n15\nCompulsory paper\n2\n2\nHuman Rights\n \n \n25\n75\n100\n16\nELECTIVE\nPaper-2\n2\n3\n       (to choose 1 out of 3)\nA.  Green Chemistry  \nB.  Supramolecular and \n      Nanochemistry \nC.  Modern Separation  \n     Techniques \n \n25\n   75\n100\n17\nOPEN \nELECTIVE \n(Non-Major) \nPaper-II\n2\n3\n      (to choose 1 out",
+      "page_number": 2
+    },
+    {
+      "document": "5.pdf",
+      "refined_text": "3 \n \n \nSYLLABUS \nUNDER CBCS \n(2021-2022) \n \nFIRST YEAR \n \nSEMESTER I \nPAPER - 1 \nORGANIC CHEMISTRY \u2013 I \nOBJECTIVES:  \nTo make the students learn and understand the concept of stereochemistry, conformational \nanalysis and their application in the determination of reaction mechanism. To understand the",
+      "page_number": 3
+    }
+  ]
+}

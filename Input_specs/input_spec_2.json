@@ -1,0 +1,10 @@
+{
+    "documents": [
+      "Input/Input_2/2023_Business_Overview_E.pdf",
+      "Input/Input_2/2022_Business_Overview_E.pdf",
+      "Input/Input_2/2021_Business_Overview_E.pdf"
+    ],
+    "persona": "Investment Analyst with a focus on tech sector financial analysis, particularly revenue growth, R&D trends, and competitive positioning",
+    "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies"
+  }
+  

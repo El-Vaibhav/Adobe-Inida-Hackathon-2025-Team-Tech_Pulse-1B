@@ -1,0 +1,12 @@
+{
+    "documents": [
+      "Input/Input_3/1.pdf",
+      "Input/Input_3/2.pdf",
+      "Input/Input_3/3.pdf",
+      "Input/Input_3/4.pdf",
+      "Input/Input_3/5.pdf"
+    ],
+    "persona": "Undergraduate Chemistry Student preparing for exam in reaction kinetics",
+    "job_to_be_done": "Identify key concepts and mechanisms for exam preparation on reaction kinetics"
+  }
+  

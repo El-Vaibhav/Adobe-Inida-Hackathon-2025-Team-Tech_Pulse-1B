@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "input_documents": [
+      "paper1.pdf",
+      "paper2.pdf",
+      "paper3.pdf"
+    ],
+    "persona": "PhD Researcher in Computational Biology with expertise in machine learning applications for drug discovery",
+    "job_to_be_done": "Prepare a comprehensive literature review focusing on methodologies, datasets, and performance benchmarks for graph neural networks in drug discovery",
+    "processing_timestamp": "2025-07-27T11:12:42.909961"
+  },
+  "extracted_sections": [
+    {
+      "document": "paper1.pdf",
+      "section_title": "Vol.:(0123456789)",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "paper1.pdf",
+      "section_title": "M.\u00a0Besharatifard, F.\u00a0Vafaee",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "paper1.pdf",
+      "section_title": "A review on\u00a0graph neural networks for\u00a0predicting synergistic\u2026",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "paper2.pdf",
+      "section_title": "DRUG-TARGET INTERACTION/AFFINITY PREDICTION:",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "paper2.pdf",
+      "section_title": "DTI/DTA Prediction: Deep Learning and Advances Review",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "paper2.pdf",
+      "section_title": "DTI/DTA Prediction: Deep Learning and Advances Review",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "paper3.pdf",
+      "section_title": "arXiv:2506.01302v1  [cs.LG]  2 Jun 2025",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "paper3.pdf",
+      "section_title": "1.1",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "paper3.pdf",
+      "section_title": "predict molecular properties, have attracted substantial attention in cheminformatics and bioinformatics (e.g.,",
+      "importance_rank": 3,
+      "page_number": 3
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "paper1.pdf",
+      "refined_text": "Vol.:(0123456789)\nArtificial Intelligence Review (2024) 57:49\nhttps://doi.org/10.1007/s10462-023-10669-z\n1 3\nA review on\u00a0graph neural networks for\u00a0predicting synergistic \ndrug combinations\nMilad\u00a0Besharatifard4\u00a0\u00b7 Fatemeh\u00a0Vafaee1,2,3,4\nAccepted: 20 December 2023 / Published online: 13 February 2024 \n\u00a9",
+      "page_number": 1
+    },
+    {
+      "document": "paper1.pdf",
+      "refined_text": "\t\nM.\u00a0Besharatifard, F.\u00a0Vafaee \n1 3\n49\u2003\nPage 2 of 38\nof anti-cancer drugs enhances efficacy compared to using a single therapy, as it targets \ndifferent key pathways in a synergistic or additive manner. By combining drugs with distinct \nmechanisms of action, therapeutic effectiveness can be enhanced,",
+      "page_number": 2
+    },
+    {
+      "document": "paper1.pdf",
+      "refined_text": "A review on\u00a0graph neural networks for\u00a0predicting synergistic\u2026\n1 3\nPage 3 of 38\u2003\n49\nThe rise in the use of GNNs in drug discovery is due to their ability to handle and inter-\npret complex data, such as molecular graphs and biological networks (Bongini et\u00a0al. 2021; \nZhao et\u00a0 al. 2021). GNN-based model",
+      "page_number": 3
+    },
+    {
+      "document": "paper2.pdf",
+      "refined_text": "DRUG-TARGET INTERACTION/AFFINITY PREDICTION:\nDEEP LEARNING MODELS AND ADVANCES REVIEW\nAli Vefghi\nDepartment of Mathematics and Computer Science\nAmirkabir University of Technology\nTehran, Iran\nalivefghi@aut.ac.ir\nZahed Rahmati\u2217\nDepartment of Mathematics and Computer Science\nAmirkabir University of Te",
+      "page_number": 1
+    },
+    {
+      "document": "paper2.pdf",
+      "refined_text": "DTI/DTA Prediction: Deep Learning and Advances Review\narXiv Template\nFigure 1: Overview of drug development process\ndrugs never make it to market due to safety concerns, lack of efficacy, or other factors [4, 5, 6]. On average, a million\nmolecules undergo screening but the final product ends up bein",
+      "page_number": 2
+    },
+    {
+      "document": "paper2.pdf",
+      "refined_text": "DTI/DTA Prediction: Deep Learning and Advances Review\narXiv Template\nresidence, and drug resistance delay can be obtained from the intensity of binding between a drug and its target protein,\ntherefore, its prediction is considered a very important task in drug discovery [18].\nClassic experimental me",
+      "page_number": 3
+    },
+    {
+      "document": "paper3.pdf",
+      "refined_text": "arXiv:2506.01302v1  [cs.LG]  2 Jun 2025\nRecent Developments in GNNs for Drug Discovery\nZhengyu Fang1, Xiaoge Zhang1, Anyin Zhao1, Xiao Li1,2,3,4, Huiyuan Chen1, and Jing\nLi*1\n1Department of Computer and Data Sciences, Case Western Reserve University\n2Department of Biochemistry, Case Western Reserve ",
+      "page_number": 1
+    },
+    {
+      "document": "paper3.pdf",
+      "refined_text": "1.1\nMolecule Generation\nAn earlier step in developing a drug for a certain disease usually involves the search of enormous amount\nof molecules to create a small subset of candidates for further laboratory testing. To reduce experimental\ncosts and to produce drug candidates more efficiently, many com",
+      "page_number": 2
+    },
+    {
+      "document": "paper3.pdf",
+      "refined_text": "predict molecular properties, have attracted substantial attention in cheminformatics and bioinformatics (e.g.,\n[30]).\n1.3\nDrug-Drug Interaction Prediction\nIn the treatment of complex diseases such as cancer and neurological disorders, combinational drug therapies\nhave shown promise in improving tre",
+      "page_number": 3
+    }
+  ]
+}

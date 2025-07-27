@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "input_documents": [
+      "2023_Business_Overview_E.pdf",
+      "2022_Business_Overview_E.pdf",
+      "2021_Business_Overview_E.pdf"
+    ],
+    "persona": "Investment Analyst with a focus on tech sector financial analysis, particularly revenue growth, R&D trends, and competitive positioning",
+    "job_to_be_done": "Analyze revenue trends, R&D investments, and market positioning strategies",
+    "processing_timestamp": "2025-07-27T15:33:47.274445"
+  },
+  "extracted_sections": [
+    {
+      "document": "2023_Business_Overview_E.pdf",
+      "section_title": "2023 BUSINESS OVERVIEW",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "2023_Business_Overview_E.pdf",
+      "section_title": "Vision, Mission & Core Values",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "2023_Business_Overview_E.pdf",
+      "section_title": "Dear Shareholders,",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "2022_Business_Overview_E.pdf",
+      "section_title": "TSMC 2022 Business Overview",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "2022_Business_Overview_E.pdf",
+      "section_title": "Table of Contents",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "2022_Business_Overview_E.pdf",
+      "section_title": "Dear Shareholders,",
+      "importance_rank": 3,
+      "page_number": 3
+    },
+    {
+      "document": "2021_Business_Overview_E.pdf",
+      "section_title": "TSMC 2021 Business Overview",
+      "importance_rank": 1,
+      "page_number": 1
+    },
+    {
+      "document": "2021_Business_Overview_E.pdf",
+      "section_title": "Table of Contents",
+      "importance_rank": 2,
+      "page_number": 2
+    },
+    {
+      "document": "2021_Business_Overview_E.pdf",
+      "section_title": "Dear Shareholders,",
+      "importance_rank": 3,
+      "page_number": 3
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "document": "2023_Business_Overview_E.pdf",
+      "refined_text": "2023 BUSINESS OVERVIEW\nTSMC \nFab 8\nFab 12\nFab 2\nFab 15\nAP6\nGlobal R&D Center\nFab 11\nFab 18\nAP2\nFab 23\nFab 21\nFab 5\nFab 16\nFab 3\n8, Li-Hsin Rd. 6, Hsinchu Science Park, Hsinchu 300-096, Taiwan, R.O.C.\nTel:+886-3-5636688     Fax:+886-3-5637000    https://www.tsmc.com\nThis report is made with recycled ",
+      "page_number": 1
+    },
+    {
+      "document": "2023_Business_Overview_E.pdf",
+      "refined_text": "Vision, Mission & Core Values\nVision\nOur vision is to be the most advanced and largest technology and foundry services \nprovider to fabless companies and IDMs, and in partnership with them, to forge a \npowerful competitive force in the semiconductor industry. \nTo realize our vision, we must have a t",
+      "page_number": 2
+    },
+    {
+      "document": "2023_Business_Overview_E.pdf",
+      "refined_text": "Dear Shareholders,\n2023 was a challenging year for the global semiconductor industry, but we also witnessed the rising \nemergence of generative AI-related applications, with TSMC as a key enabler. As the world re-emerged \nfrom more than two years of pandemic-induced slowdown, weakening global macroe",
+      "page_number": 3
+    },
+    {
+      "document": "2022_Business_Overview_E.pdf",
+      "refined_text": "TSMC 2022 Business Overview\nhttps://www.tsmc.com\nThis report is made with recycled paper.\n",
+      "page_number": 1
+    },
+    {
+      "document": "2022_Business_Overview_E.pdf",
+      "refined_text": "Table of Contents\n1  Letter to Shareholders\n \n3\n2  Introduction \n9\n3  Market Overview\n \n12\n4  TSMC\u2019s Trinity of Strengths\n \n15\n5  Corporate Governance\n \n18\n6  Environmenal, Social and Governance\n \n19\n7  Financial Statements\n \n21\nVision, Mission & Core Values\nVision\nOur vision is to be the most advan",
+      "page_number": 2
+    },
+    {
+      "document": "2022_Business_Overview_E.pdf",
+      "refined_text": "Dear Shareholders,\nThe year 2022 was a landmark year for TSMC. Supported by our strong technology leadership and \ndifferentiation, we delivered a thirteenth-consecutive year of record revenue, with strong profitable \ngrowth. Our 2022 annual revenue increased 33.5% year-over-year in U.S. dollar terms",
+      "page_number": 3
+    },
+    {
+      "document": "2021_Business_Overview_E.pdf",
+      "refined_text": "TSMC 2021 Business Overview\nhttps://www.tsmc.com\n",
+      "page_number": 1
+    },
+    {
+      "document": "2021_Business_Overview_E.pdf",
+      "refined_text": "Table of Contents\n1. Letter to Shareholders \n3\n2. Introduction \n9\n3. Market Overview \n13\n4. TSMC\u2019s Trinity of Strengths \n15\n5. Corporate Governance \n18\n6. Environmental, Social and Governance\n \n19\n7. Financial Statements \n21\nTSMC Vision, Mission & Core Values\nTSMC\u2019s Vision\nOur vision is to be the mo",
+      "page_number": 2
+    },
+    {
+      "document": "2021_Business_Overview_E.pdf",
+      "refined_text": "Dear Shareholders,\n2021 was a year full of challenges and opportunities for TSMC, as the COVID-19 pandemic persisted \nagainst a backdrop of strong semiconductor industry growth. Although the wide availability of vaccines \nhas provided much-needed protection, outbreaks from new variants of the virus ",
+      "page_number": 3
+    }
+  ]
+}
