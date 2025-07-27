@@ -9,19 +9,19 @@ This project enhances document understanding by applying persona-specific contex
 ### 1. Goal:
 To analyze PDF documents through the lens of a user’s persona and task—enhancing document relevance, extracting insights, and ranking sections based on contextual importance.
 
-### 2.Step-by-Step Workflow:
+### 2. Step-by-Step Workflow:
 
-#### 3.Text Extraction (parser.py)
+#### Text Extraction (parser.py)
 1) Use PyMuPDF to extract text from each non-empty page in the PDF.
 
 2) Output: List of {page_number, text} dictionaries.
 
-#### 4.Document Sectioning
+#### Document Sectioning
 1)Simulate or parse document sections using headings or manual segmentation.
 
 2) Structure: List of {section_title, content, position}.
 
-#### 5.Persona Processing (persona.py)
+#### Persona Processing (persona.py)
 Classify user role (e.g., student, researcher) and task (e.g., review, learn) using keyword matching.
 
 For each section:
@@ -38,7 +38,7 @@ For each section:
 
 6) Output: Enhanced section data + metadata summary.
 
-#### 6.Section Ranking (ranks_section.py)
+#### Section Ranking (ranks_section.py)
 1) Compute final composite relevance score for each section based on:
 
 2) Semantic relevance (TF-IDF-like scoring vs persona context).
@@ -49,7 +49,7 @@ For each section:
 
 5) Rank sections in descending order of relevance.
 
-#### 7.Key Techniques:
+#### Key Techniques:
 1) Keyword-based classification for persona and task inference.
 
 2) Relevance scoring via weighted components:
