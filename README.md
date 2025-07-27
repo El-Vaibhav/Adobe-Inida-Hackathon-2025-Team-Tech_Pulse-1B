@@ -17,7 +17,7 @@ To analyze PDF documents through the lens of a user’s persona and task—enhan
 2) Output: List of {page_number, text} dictionaries.
 
 #### Document Sectioning
-1)Simulate or parse document sections using headings or manual segmentation.
+1) Simulate or parse document sections using headings or manual segmentation.
 
 2) Structure: List of {section_title, content, position}.
 
