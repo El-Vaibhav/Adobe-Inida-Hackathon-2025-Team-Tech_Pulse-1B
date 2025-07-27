@@ -166,6 +166,7 @@ Useful for personalized document summarization, review, and navigation.
   }
 }
 ```
+## Note - The pdfs for each testcase are stored in seperate folders inside the Input folder, for each test case the correcponding input_specification file is there in Input_specs folder. For each testcase we get output in a seperate folder (eg, output, output_2)
 
 ## 🔧 Modules Explained
 
