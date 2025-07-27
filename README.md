@@ -1,76 +1,175 @@
 # 📚 Persona-Driven Document Intelligence
 # Challenge 1B – Context-Aware PDF Analysis and Section Ranking
 
-# # 🚀 Overview
+## 🚀 Overview
 This project enhances document understanding by applying persona-specific context to PDF analysis. It extracts text from PDF files, analyzes each section from a persona’s perspective (e.g., student, analyst), and ranks sections by relevance for a specific task (e.g., learning, reviewing).
 
-# #🧭 Approach Summary
+## 🧭 Approach Summary
 
-# # # Goal:
+### Goal:
 To analyze PDF documents through the lens of a user’s persona and task—enhancing document relevance, extracting insights, and ranking sections based on contextual importance.
 
-# # # Step-by-Step Workflow:
+### Step-by-Step Workflow:
 
-# # # # Text Extraction (parser.py)
+#### Text Extraction (parser.py)
 Use PyMuPDF to extract text from each non-empty page in the PDF.
 
 Output: List of {page_number, text} dictionaries.
 
-# # # # Document Sectioning
+#### Document Sectioning
 Simulate or parse document sections using headings or manual segmentation.
 
 Structure: List of {section_title, content, position}.
 
-# # # # Persona Processing (persona.py)
+#### Persona Processing (persona.py)
 Classify user role (e.g., student, researcher) and task (e.g., review, learn) using keyword matching.
 
 For each section:
 
-Compute persona relevance score.
+1) Compute persona relevance score.
 
-Extract persona-specific insights (e.g., "Findings presented").
+2) Extract persona-specific insights (e.g., "Findings presented").
 
-Identify key concepts relevant to the persona.
+3) Identify key concepts relevant to the persona.
 
-Compute job alignment score.
+4) Compute job alignment score.
 
-Assign importance level: High / Medium / Low.
+5) Assign importance level: High / Medium / Low.
 
-Output: Enhanced section data + metadata summary.
+6) Output: Enhanced section data + metadata summary.
 
-# # # # Section Ranking (ranks_section.py)
-Compute final composite relevance score for each section based on:
+#### Section Ranking (ranks_section.py)
+1) Compute final composite relevance score for each section based on:
 
-Semantic relevance (TF-IDF-like scoring vs persona context).
+2) Semantic relevance (TF-IDF-like scoring vs persona context).
 
-Content length optimization (ideal length preferred).
+3) Content length optimization (ideal length preferred).
 
-Section position bonus (earlier sections are favored).
+4) Section position bonus (earlier sections are favored).
 
-Rank sections in descending order of relevance.
+5) Rank sections in descending order of relevance.
 
-# # # # Key Techniques:
-Keyword-based classification for persona and task inference.
+#### Key Techniques:
+1) Keyword-based classification for persona and task inference.
 
-Relevance scoring via weighted components:
+2) Relevance scoring via weighted components:
 
-Role match, task match, direct task keyword match.
+3) Role match, task match, direct task keyword match.
 
-Context-aware insights extraction per role.
+4) Context-aware insights extraction per role.
 
-TF-IDF-inspired scoring without external corpus.
+5) TF-IDF-inspired scoring without external corpus.
 
-Heuristic-based length and position adjustments.
+6) Heuristic-based length and position adjustments.
 
 Output:
 Ranked document sections with persona-aligned metadata.
-
 Useful for personalized document summarization, review, and navigation.
 
+## Output format
 
-# # 🔧 Modules Explained
+``` json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Challenge 1B Output Schema",
+  "description": "Schema for persona-driven document intelligence output",
+  "required": ["metadata", "extracted_sections", "subsection_analysis"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "input_documents",
+        "persona",
+        "job_to_be_done",
+        "processing_timestamp"
+      ],
+      "properties": {
+        "input_documents": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "List of input PDF document filenames"
+        },
+        "persona": {
+          "type": "string",
+          "description": "Description of the user persona"
+        },
+        "job_to_be_done": {
+          "type": "string",
+          "description": "Specific task the persona needs to accomplish"
+        },
+        "processing_timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Timestamp when processing was completed"
+        }
+      }
+    },
+    "extracted_sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "document",
+          "section_title",
+          "importance_rank",
+          "page_number"
+        ],
+        "properties": {
+          "document": {
+            "type": "string",
+            "description": "Source document filename"
+          },
+          "section_title": {
+            "type": "string",
+            "description": "Title of the extracted section"
+          },
+          "importance_rank": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Importance ranking (1 = most important)"
+          },
+          "page_number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Page number where section is found"
+          }
+        }
+      },
+      "description": "Main sections ranked by relevance to persona and job"
+    },
+    "subsection_analysis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["document", "refined_text", "page_number"],
+        "properties": {
+          "document": {
+            "type": "string",
+            "description": "Source document filename"
+          },
+          "refined_text": {
+            "type": "string",
+            "description": "Refined and extracted text content"
+          },
+          "page_number": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Page number where content is found"
+          }
+        }
+      },
+      "description": "Granular subsection extraction with refined content"
+    }
+  }
+}
+```
 
-# # #  1. utils/parser.py – PDF Text Extraction
+## 🔧 Modules Explained
+
+###  1. utils/parser.py – PDF Text Extraction
 Uses PyMuPDF (fitz) to extract text from each page.
 
 Skips empty pages to optimize performance.
@@ -78,7 +177,7 @@ Skips empty pages to optimize performance.
 Output: A list of { page_number, text } dictionaries.
 
 
-# # # # 2. src/persona.py – Persona Processor
+#### 2. src/persona.py – Persona Processor
 Defines persona roles (e.g., researcher, student) and tasks (e.g., review, learn).
 
 Enhances each document section with:
@@ -97,7 +196,7 @@ Importance level: high, medium, low
 
 Summary metadata for entire document
 
-# # # # 3. src/ranks_section.py – Section Ranker
+#### 3. src/ranks_section.py – Section Ranker
 Ranks document sections based on:
 
 Semantic relevance (TF-IDF-based)
@@ -108,33 +207,34 @@ Position in document (earlier sections are prioritized)
 
 Computes a composite score for each section.
 
+## 👥 Supported Personas and Tasks
 
-# # 👤 Supported Personas and Tasks
+### 🎭 Roles:
 
-# # # Roles:
+🧪 Researcher
 
-Researcher
+🎓 Student
 
-Student
+📊 Analyst
 
-Analyst
+🧑‍🏫 Teacher
 
-Teacher
+👔 Manager
 
-Manager
+🚀 Entrepreneur
 
-Entrepreneur
+### 📌 Tasks:
+🧐 Review
 
-# # # Tasks:
-Review
+📚 Learn
 
-Learn
+🧵 Analyze
 
-Analyze
+🛠️ Prepare
 
-Prepare
+✍️ Summarize
 
-Summarize
+
 
 ## Docker Configuration
 
