@@ -299,8 +299,3 @@ cd '.\Round 1B Persona-Driven Document Intelligence\'
 docker run --rm -v ${PWD}/input:/app/input -v ${PWD}/output:/app/output --network none team_tech_pulse_solution_2:69
 ```
 
-### Input/Output
-
-- **Input**: Place PDF files in `Input/input_#/` directory
-- **Output**: JSON files generated in `output_#/` directory
-- **Naming**: `document.pdf` → `document.json`
