@@ -6,22 +6,22 @@ This project enhances document understanding by applying persona-specific contex
 
 ## 🧭 Approach Summary
 
-### Goal:
+### 1. Goal:
 To analyze PDF documents through the lens of a user’s persona and task—enhancing document relevance, extracting insights, and ranking sections based on contextual importance.
 
-### Step-by-Step Workflow:
+### 2.Step-by-Step Workflow:
 
-#### Text Extraction (parser.py)
-Use PyMuPDF to extract text from each non-empty page in the PDF.
+#### 3.Text Extraction (parser.py)
+1) Use PyMuPDF to extract text from each non-empty page in the PDF.
 
-Output: List of {page_number, text} dictionaries.
+2) Output: List of {page_number, text} dictionaries.
 
-#### Document Sectioning
-Simulate or parse document sections using headings or manual segmentation.
+#### 4.Document Sectioning
+1)Simulate or parse document sections using headings or manual segmentation.
 
-Structure: List of {section_title, content, position}.
+2) Structure: List of {section_title, content, position}.
 
-#### Persona Processing (persona.py)
+#### 5.Persona Processing (persona.py)
 Classify user role (e.g., student, researcher) and task (e.g., review, learn) using keyword matching.
 
 For each section:
@@ -38,7 +38,7 @@ For each section:
 
 6) Output: Enhanced section data + metadata summary.
 
-#### Section Ranking (ranks_section.py)
+#### 6.Section Ranking (ranks_section.py)
 1) Compute final composite relevance score for each section based on:
 
 2) Semantic relevance (TF-IDF-like scoring vs persona context).
@@ -49,7 +49,7 @@ For each section:
 
 5) Rank sections in descending order of relevance.
 
-#### Key Techniques:
+#### 7.Key Techniques:
 1) Keyword-based classification for persona and task inference.
 
 2) Relevance scoring via weighted components:
@@ -169,43 +169,45 @@ Useful for personalized document summarization, review, and navigation.
 
 ## 🔧 Modules Explained
 
-###  1. utils/parser.py – PDF Text Extraction
-Uses PyMuPDF (fitz) to extract text from each page.
+####  1. utils/parser.py – PDF Text Extraction
 
-Skips empty pages to optimize performance.
+1) Uses PyMuPDF (fitz) to extract text from each page.
 
-Output: A list of { page_number, text } dictionaries.
+2) Skips empty pages to optimize performance.
+
+3) Output: A list of { page_number, text } dictionaries.
 
 
 #### 2. src/persona.py – Persona Processor
-Defines persona roles (e.g., researcher, student) and tasks (e.g., review, learn).
 
-Enhances each document section with:
+1) Defines persona roles (e.g., researcher, student) and tasks (e.g., review, learn).
 
-Persona relevance score
+##### Enhances each document section with:
 
-Key concepts
+1) Persona relevance score
 
-Persona-specific insights (e.g., "Methodology identified" for researchers)
+2) Key concepts
 
-Computes:
+3) Persona-specific insights (e.g., "Methodology identified" for researchers)
 
-Job alignment score
+##### Computes:
 
-Importance level: high, medium, low
+1) Job alignment score
 
-Summary metadata for entire document
+2) Importance level: high, medium, low
+
+3) Summary metadata for entire document
 
 #### 3. src/ranks_section.py – Section Ranker
-Ranks document sections based on:
+##### Ranks document sections based on:
 
-Semantic relevance (TF-IDF-based)
+1) Semantic relevance (TF-IDF-based)
 
-Section length optimization
+2) Section length optimization
 
-Position in document (earlier sections are prioritized)
+3) Position in document (earlier sections are prioritized)
 
-Computes a composite score for each section.
+4) Computes a composite score for each section.
 
 ## 👥 Supported Personas and Tasks
 
