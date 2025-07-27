@@ -166,7 +166,36 @@ Useful for personalized document summarization, review, and navigation.
   }
 }
 ```
-## Note - The pdfs for each testcase are stored in seperate folders inside the Input folder, for each test case the correcponding input_specification file is there in Input_specs folder. For each testcase we get output in a seperate folder (eg, output, output_2)
+## 📂 Input/Output Structure
+
+### Test Case PDFs:
+Each test case PDF is stored in a separate folder inside the Input/ directory.
+
+#### Example:
+
+```bash
+Input/Input_1/document.pdf  
+Input/input_2/document.pdf  
+```
+
+### Input Specifications:
+For each test case, a corresponding input specification file is provided in the Input_specs/ folder.
+
+#### Example:
+
+```bash
+Input_specs/input_spec_1.json  
+Input_specs/input_spec_2.json  
+```
+
+### Output:
+The output for each test case is written to a separate output folder, named similarly.
+
+#### Example:
+```bash
+output/          → Output for test case 1  
+output_2/        → Output for test case 2  
+```
 
 ## 🔧 Modules Explained
 
